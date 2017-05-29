@@ -1,0 +1,17 @@
+{
+  "name": "ember-guide-pdf",
+  "version": "1.0.0",
+  "description": "A script to generate a PDF from ember guide sources",
+  "main": "index.js",
+  "scripts": {
+    "clone": "git clone https://github.com/emberjs/guides.git src-guide",
+    "build": "git -C src-guide/ pull && node src/build.js --harmony"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "copy-dir": "^0.3.0",
+    "js-yaml": "^3.8.4",
+    "marked": "^0.3.6"
+  }
+}
